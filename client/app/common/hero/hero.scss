@@ -1,0 +1,42 @@
+@import '../common';
+
+.hero {
+  background-color: $darkBgColor;
+  height: 50rem;
+  padding: 3rem;
+
+  * {
+    color: $lightTextColor;
+  }
+}
+.nav_section {
+ 	 background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top:80px;
+    border-radius:0px;
+    @media(max-width:380px){
+      height:70px;
+    }
+    .logo_wrapper{
+    	float:none;
+    	margin:0px auto;
+    	max-width:460px;
+    	width:100%;
+
+	    .navbar-brand{
+	    	.logo{
+	    		width:100%;
+	    		display:inline-block;
+	    		position:relative;
+	    		top:-60px;
+	    		margin-right:0px;
+	    		transistion:width 1s ease 0s, top 1s ease 0s, transform 1s ease 0s;
+          @media(max-width:430px){
+          top:-40px;
+          }
+	    	}
+	    }
+    }
+}

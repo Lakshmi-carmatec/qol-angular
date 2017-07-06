@@ -1,0 +1,14 @@
+.footer{
+	background:#131313;
+	p{
+		font-size:18px;
+		color:#6C6C6C;
+		padding:15px 0px;
+		@media (max-width:480px){
+		text-align:center;
+		}
+		i{
+			font-size:16px;
+		}
+	}
+}

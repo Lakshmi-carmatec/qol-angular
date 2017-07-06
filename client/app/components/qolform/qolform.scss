@@ -1,0 +1,108 @@
+.qolform {
+  color: red;
+}
+#agreement_pdf{
+			@media(max-width:480px){
+				width:100%;
+				overflow:auto;
+			}
+			input[type="text"]{
+				background: transparent;
+				border: 0px;
+				border-bottom: 1px dashed #fff;
+			}
+			.small_width{
+				width:100%;
+				max-width:300px;
+			}
+			.mideum_width,.large_width{
+				width:100%;
+				max-width:570px;
+			}
+			.pdf_heading {
+			  background: #8dc63f none repeat scroll 0 0;
+
+			  h2{
+			  	color: #fff;
+			    font-size: 20px;
+			    line-height: 20px;
+			    padding: 10px 0;
+			  }
+			}
+			.pdf_body_content{
+				height:1100px;
+				overflow-y:scroll;
+			 	padding:0px 75px;
+				.pdf_header{
+
+					h1{
+						font-size: 34px;
+						font-weight: bold;
+						color:#fff;
+						padding-top:13px;
+					
+					}
+				}
+				.col-xs-12.col-md-4.col-lg-4.col-sm-4:nth-child(2) {
+					  border-left: 1px solid #fff;
+					  border-right: 1px solid #fff;
+					}
+				p{
+					font-size:18px;
+					line-height:30px;
+					color:#fff;
+				}
+				label{
+					font-size:18px;
+					color:#fff;
+				}
+			}
+			.pdf_footer{
+				background: #8dc63f none repeat scroll 0 0;
+				p{
+					font-size:18px;
+					color:#fff;
+					line-height:40px;
+					padding-right:30px;
+				}
+			}
+			.signature_wrap {
+			  background: #fff none repeat scroll 0 0;
+			  width: 100%;
+
+			  img{
+			  	width:100%;
+			  }
+			}
+			td{
+			border:1px solid #fff;
+			}
+			.address_page{
+				padding-top:15px;
+				h3{
+				color:#fff;
+				margin:0px;
+				}
+			}
+		}
+
+		#modal-title, #modal_footer{
+			  background: #8dc63f none repeat scroll 0 0;
+			  color: #fff;
+			  text-align: center;
+			  text-transform: uppercase;
+			  button{
+			  	 border: 0 solid;
+			    border-radius: 0;
+			    color: #000;
+			    font-size: 18px;
+			    margin: 0 10px;
+			    max-width: 150px;
+			    padding: 5px 10px;
+			    width: 100%;
+			    font-weight:300;
+			  }
+			}
+.pdf_wrapper{
+	border:1px solid #8dc63f;
+}

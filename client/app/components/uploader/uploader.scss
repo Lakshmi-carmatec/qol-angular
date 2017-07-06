@@ -1,0 +1,76 @@
+.content_wrapper {
+    			max-width: 930px;
+ 	   			margin: 0px auto;
+ 	   			.btn-upload{
+ 	   				width: 100%;
+ 	   				background: #fff;
+ 	   				border:2px solid #353535;
+ 	   				color: #353535;
+ 	   				position: relative;
+ 	   				display:block;
+ 	   				text-align:center;
+ 	   				&:hover{
+ 	   					background:#8DC63F;
+ 	   					color:#fff !important;
+ 	   					h1{
+ 	   						color:#fff !important;
+ 	   					}
+ 	   					p{
+ 	   						color:#fff;
+ 	   					}
+ 	   				}
+ 	   				p{
+ 	   					font-size:18px;
+ 	   				}
+ 	   			}
+ 	   			.fileinput{
+ 	   				position: absolute;
+ 	   				z-index: 1px;
+ 	   				padding: 56px 0px;
+ 	   				top:0px;
+ 	   				width: 93%;
+ 	   				opacity: 0;
+ 	   			}
+ 	   			.noinput{
+ 	   				display:none;
+ 	   			}
+ 	   			#filevalue,#filevalue1{
+ 	   				color:#353535;
+ 	   				font-weight:300;
+ 	   				font-size:20px;
+ 	   				
+ 	   				#file_img,#file_img1{
+ 	   					width:45px;
+ 	   					height:45px;
+ 	   					background-size:100% 100%;
+ 	   					background-repeat:no-repeat;
+ 	   					display:inline-block;
+ 	   					vertical-align:middle;
+ 	   				}
+ 	   				.pdf{
+ 	   					background:url('/images/Pdf.png');
+ 	   				}
+ 	   				.ai{
+ 	   					background:url('/images/Ai.png');
+ 	   				}
+ 	   				.zip{
+ 	   					background:url('/images/Pdf.png');
+ 	   				}
+ 	   				.jpeg{
+ 	   					background:url('/images/jpeg.png');
+ 	   				}
+ 	   				.xml{
+ 	   					background:url('/images/Xml.png');
+ 	   				}
+ 	   				.png{
+ 	   					background:url('/images/Png.png');
+ 	   				}
+ 	   			}
+ 	   			.instructiontext{
+ 	   				height:135px;
+ 	   				background:#ECECEC;
+ 	   				border-radius:0px;
+ 	   				border:0px;
+ 	   				font-size:24px;
+ 	   			}
+			}

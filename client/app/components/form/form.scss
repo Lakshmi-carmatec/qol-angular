@@ -1,0 +1,13 @@
+.form {
+  color: red;
+}
+#agreement_pdf{
+	@media (max-width:380px){
+		width:100%;
+		overflow:auto;
+	}
+	table{
+	width:100%;
+	overflow:auto;
+	}
+}

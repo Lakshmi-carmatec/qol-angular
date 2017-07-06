@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+ 
+<section class="header-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="logo-wrapper">
+                <p>text</p>
+             </div>
+             <header>
+               <p>document</p>
+              </header>  
+        </div>  
+    <div>    
+  </section>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

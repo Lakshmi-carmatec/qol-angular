@@ -1,0 +1,136 @@
+<div class="form_wrapper">
+<form id="qolform" name="form" action="insertdetails.php" method="post">
+	<div class="container">
+		<div class="row step-indicator" id="step1">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="text-center">
+					<img src="/images/S1.png" alt="steps"/>
+				</div>
+			</div>
+		</div>
+		<div class="row tab-wrapper">
+			<div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 form_header">
+				<h1 class="text-center text-uppercase">select product(s) you'd like to private label & qunatity</h1>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ui-tab-wrapper">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="tabscontent in fm.tabscontent">
+
+					 <uib-accordion close-others="oneAtATime">
+	   					 <div uib-accordion-group class="panel-default" heading="{{tabscontent.title}}">
+	    				   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><p>select the number of bottles</p></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><select ng-model="listnumber" ng-options="quantity as quantity.label for quantity in fm.select" ng-change="fm.pushToArray(tabscontent.title,listnumber.label)"></select>
+	    				   </div>
+	   					 </div>
+	  				 </uib-accordion>
+  				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="container-fliud label_wrapper">
+				<div class="container">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form_header">
+					<h1 class="text-uppercase text-center nomargin">label name suggestions</h1>
+					</div>
+					<div class="content_wrapper form_header text-center">
+						<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6" ng-repeat="radio in fm.label">
+							<input type="radio" class="form-control" name="label_radio" id="{{radio.radioname}}" ng-modal="radio.checked"/>
+							<label for="{{radio.radioname}}" class="{{radio.radioname}}"></label>
+						</div>	
+					</div>
+				</div>
+				<div class="container other_text">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="input-group">
+							<span class="input-group-addon text-capitalize">other</span><input type="text" class="form-control" name="otherlabel" id="otherlabel"  onfocus="myFunction()">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+						<div class="label_order_wrapper">
+							<h3 class="text-uppercase text-center nomargin">your private label order:</h3>
+							<ol>
+								<li ng-repeat="item in fm.selectedArray">
+									<p>
+									{{item.name}} @ ( {{item.label}} bottles)
+									<span class="text-right">
+										<a href="javascript:void(0)">
+											<i class="fa fa-trash-o" aria-hidden="true"></i>
+										</a>
+									</span>
+									</p>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fliud step2_outer_wrapper">
+		<div class="container-fluid step2_wrapper">
+			<div class="container"> 
+				<div class="row step-indicator" id="step2">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="text-center">
+							<img src="/images/S2.png" alt="steps"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<uploader></uploader>
+			<div class="container">
+				<div class="row bussiness_info">
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 form_header">
+						<h1 class="text-center text-uppercase">information about your business</h1>
+						<p class="text-center">Your label must include the fields listed below. This is an FDA requirement. it's to your benefits should a consumer need to contact you about a question or needs to place reorders. This information should be the same as the one listed in public domain</p>
+					</div>
+					<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 pr0">
+						<textform></textform>
+					</div>
+					<div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 info_img pl0">
+
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="container-fluid step3_wrapper">
+			<div class="container"> 
+				<div class="row step-indicator" id="step3">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="text-center">
+							<img src="/images/S3.png" alt="steps"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row agreement">
+					<qolform></qolform>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+					<div class="text-center">
+						<button type="submit" class="btn btn-submit text-uppercase">sumbit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</form>
+<div class="container-fluid contact_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 text-center">
+				<p class="text-center text-uppercase">have a question, please feel free to</p>
+				<p class="text-center">Contact Us at <a href="tel:(877) 937-2422">(877) 937-2422</a> or Email us at <a href="mailto:privatelabel@qollabs.com">privatelabel@qollabs.com</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

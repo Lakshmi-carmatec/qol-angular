@@ -1,0 +1,48 @@
+<div class="container">
+				<div class="row concept_wrapper">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 form_header">
+						<div class="concept">
+						<h1 class="text-center text-uppercase nomargin">do you have any existing label design or concept</h1>
+						<div class="content_wrapper" ng-repeat="upload in um.conceptupload">
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+								<div class="uploader">
+									<a href="#" class="btn-upload {{upload.status}}">
+										<h1 class="text-uppercase text-center">{{upload.status}}</h1>
+										<p>{{upload.type}}</p>
+									</a>
+									<input type="file" class="{{upload.classname}}" id="fileinput" onchange="filename()" name="file" />
+								</div>
+								<p id="filevalue">
+
+								</p>
+							</div> 
+						</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 form_header">
+						<div class="concept">
+						<h1 class="text-center text-uppercase nomargin">do you have an existing logo</h1>
+						<div class="content_wrapper" ng-repeat="upload in um.conceptupload">
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+								<div class="uploader">
+									<a href="javascript:void(0)" class="btn-upload {{upload.status}}">
+										<h1 class="text-uppercase text-center">{{upload.status}}</h1>
+										<p>{{upload.type}}</p>
+									</a>
+									<input type="file" class="{{upload.classname}}" id="fileinput1" onchange="filename1()" name="file"/>
+								</div>
+								<p id="filevalue1">
+
+								</p>
+							</div> 
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 form_header">
+						<h1 class="text-center text-uppercase nomargin">special instructions / comments</h1>
+						<div class="content_wrapper">	
+							<textarea cols="5" class="form-control instructiontext" placeholder="Enter|"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
